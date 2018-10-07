@@ -54,7 +54,7 @@ To debug unhandled rejections you can create a listener using `process.on('unhan
 
 ### Can JSON.parse() crash your application?
 
-Wrap JSON.parse() should be wrapped in a try-catch block or inside a Promise to prevent your app from crashing. If the input string passed to the JSON.parse() function is not proper JSON the output will throw an error.
+JSON.parse() should be wrapped in a try-catch block or inside a Promise to prevent your app from crashing. If the input string passed to the JSON.parse() function is not proper JSON the output will throw an error.
 
 ### Desribe a way to handle a CPU-intensive task in NodeJs.
 
@@ -64,6 +64,8 @@ Node.js is single-threaded and therefore can pose a problem when running CPU-int
 #### async function() { return "hello" }
 
 Async function generates a function that returns a promise.
+
+function () { return new Promise(r => r("hello")) }
 
 ### How do you evaluate two promises in parallel in an async function?
 
