@@ -56,7 +56,7 @@ To debug unhandled rejections you can create a listener using `process.on('unhan
 
 JSON.parse() should be wrapped in a try-catch block or inside a Promise to prevent your app from crashing. If the input string passed to the JSON.parse() function is not proper JSON the output will throw an error.
 
-### Desribe a way to handle a CPU-intensive task in NodeJs.
+### Describe a way to handle a CPU-intensive task in NodeJs.
 
 Node.js is single-threaded and therefore can pose a problem when running CPU-intensive tasks. To handle CPU-intensive tasks, Node has the ability to spawn multiple child processes by setting up a queue and a pool of workers.
 
